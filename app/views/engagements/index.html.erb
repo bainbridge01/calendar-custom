@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Engagements</h1>
+
+<div id="engagements">
+  <% @engagements.each do |engagement| %>
+    <%= render engagement %>
+    <p>
+      <%= link_to "Show this engagement", engagement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New engagement", new_engagement_path %>

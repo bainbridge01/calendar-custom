@@ -1,0 +1,30 @@
+<div class="container mt-5 text-center">
+    <h1>Pages#home</h1>
+    <p>Find me in app/views/pages/home.html.erb</p>
+
+    <%= month_calendar(events: @engagements) do |date, engagements| %>
+        <div class="day">
+            <%= date  %>
+        </div>
+
+        <% engagements.each do |engagement| %>
+            <div class="card-header">
+                <div class="card-title">
+                    <%= link_to engagement.title, engagement %>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <%= engagement.description%>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="card-text">
+                    From:  <%= engagement.start_time.strftime('%A,%B%t%d,%Y at %I:%M')%>
+                 
+                </div>
+            </div>
+
+        <% end%>
+    <% end %>
+</div> 

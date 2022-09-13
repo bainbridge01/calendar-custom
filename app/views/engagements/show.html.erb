@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @engagement %>
+
+<div>
+  <%= link_to "Edit this engagement", edit_engagement_path(@engagement) %> |
+  <%= link_to "Back to engagements", engagements_path %>
+
+  <%= button_to "Destroy this engagement", @engagement, method: :delete %>
+</div>
