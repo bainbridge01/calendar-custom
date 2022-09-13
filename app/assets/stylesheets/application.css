@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+ .simple-calendar {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 5px solid purple;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(26, 25, 25);
+    background-color: rgb(208, 218, 208);
+}
+.day {
+    width: 15;
+    padding: 10px;
+}
+
+.wday-0 {
+    color: red;
+}
+.wday-1 {
+    color: black;
+}
+.wday-2 {
+    color: black;
+}
+.wday-3 {
+    color: black;
+}
+.wday-4 {
+    color: black;
+}
+.wday-5 {
+    color: black;
+}
+.wday-6 {
+    color: red;
+}
+
+.today {
+    background-color: aquamarine;
+}
+.past {
+
+}
+.future {}
+
+.start-date {}
+
+.prev-month {}
+.next-month {
+   
+ }
+.current-month {
+   
+}
+
+.has-events {
+    background-color: red;
+}
